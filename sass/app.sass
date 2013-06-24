@@ -1,37 +1,101 @@
 @import settings
 @import normalize
 @import foundation
-@import url("http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Oswald:400,300,700")
+@import compass/css3
+@import "http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Oswald:400,300,700"
 
 $beige: #f5f3ee
+$teal: #00917d
 $serif: 'PT Serif', serif
 $sans: 'Oswald', sans-serif
 
 html, body
     background: $beige
+    height: 100%
+
+.container
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+
+@mixin section($base_color, $text_color)
+    min-height: 30%
+    background: $base_color
+    color: $text_color
+    text-align: center
+    padding: 150px 0
+    border-bottom: 4px solid saturate(lighten($base_color, 30%), 100%)
 
 .header
-
-    background: #00917d
-    text-align: center
-    padding: 50px 0 30px
-    border-bottom: 1px solid #00b93d
+    
+    $base_color: #554396
+    $text_color: lighten($base_color, 70%)
+    @include section($base_color, $text_color)
 
     .title, .subtitle
-        margin: 0
+        margin: 10px 0
         padding: 0
 
     .title
         font-family: $sans
         font-weight: 400
         text-transform: uppercase
+        text-shadow: 0 2px 2px darken($base_color, 15%)
         a
-            color: #c0efe3
+            color: lighten($base_color, 60%)
 
     .subtitle
         font-family: $serif
         font-style: italic
         font-weight: 400
+        text-shadow: 0 1px 2px darken($base_color, 10%)
         a
-            color: $beige
+            color: lighten($base_color, 50%)
+
+
+.about
+
+    $base_color: #8abf05
+    $text_color: lighten($base_color, 70%)
+    @include section($base_color, $text_color)
+
+    p
+        font-family: $serif
+        font-style: italic
+        font-weight: 400
+        color: $text_color
+        font-size: 30px
+
+.links
+    
+    $base_color: #14be4c
+    $text_color: lighten($base_color, 70%)
+    @include section($base_color, $text_color)
+
+    h2
+        font-family: $serif
+        font-style: italic
+        font-weight: 400
+        a
+            @include transition-property(all)
+            @include transition-duration(200ms)
+            $normal: lighten($base_color, 50%)
+            $hover: lighten($base_color, 70%)
+            color: $normal
+            border-bottom: 3px solid $base_color
+            &:hover
+                color: $hover
+                border-bottom-color: $hover
+
+
+.footer
+    
+    $base_color: #0aa58f
+    $text_color: lighten($base_color, 70%)
+    @include section($base_color, $text_color)
+
+    min-height: 30%
+    bottom: 0
 

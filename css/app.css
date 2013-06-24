@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Oswald:400,300,700");
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Oswald:400,300,700);
 /* normalize.css v2.1.1 | MIT License | git.io/normalize */
 /* ==========================================================================
  * HTML5 display definitions
@@ -6627,40 +6627,118 @@ a.th {
   max-width: 800px;
 }
 
-/* line 10, ../sass/app.sass */
+/* line 12, ../sass/app.sass */
 html, body {
   background: #f5f3ee;
+  height: 100%;
 }
 
-/* line 13, ../sass/app.sass */
-.header {
-  background: #00917d;
-  text-align: center;
-  padding: 50px 0 30px;
-  border-bottom: 1px solid #00b93d;
+/* line 16, ../sass/app.sass */
+.container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
-/* line 20, ../sass/app.sass */
+
+/* line 31, ../sass/app.sass */
+.header {
+  min-height: 30%;
+  background: #554396;
+  color: white;
+  text-align: center;
+  padding: 150px 0;
+  border-bottom: 4px solid #9173ff;
+}
+/* line 37, ../sass/app.sass */
 .header .title, .header .subtitle {
-  margin: 0;
+  margin: 10px 0;
   padding: 0;
 }
-/* line 24, ../sass/app.sass */
+/* line 41, ../sass/app.sass */
 .header .title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
+  text-shadow: 0 2px 2px #372b61;
 }
-/* line 28, ../sass/app.sass */
+/* line 46, ../sass/app.sass */
 .header .title a {
-  color: #c0efe3;
+  color: white;
 }
-/* line 31, ../sass/app.sass */
+/* line 49, ../sass/app.sass */
 .header .subtitle {
   font-family: "PT Serif", serif;
   font-style: italic;
   font-weight: 400;
+  text-shadow: 0 1px 2px #413373;
 }
-/* line 35, ../sass/app.sass */
+/* line 54, ../sass/app.sass */
 .header .subtitle a {
-  color: #f5f3ee;
+  color: #e8e5f3;
+}
+
+/* line 58, ../sass/app.sass */
+.about {
+  min-height: 30%;
+  background: #8abf05;
+  color: white;
+  text-align: center;
+  padding: 150px 0;
+  border-bottom: 4px solid #d1ff5e;
+}
+/* line 64, ../sass/app.sass */
+.about p {
+  font-family: "PT Serif", serif;
+  font-style: italic;
+  font-weight: 400;
+  color: white;
+  font-size: 30px;
+}
+
+/* line 71, ../sass/app.sass */
+.links {
+  min-height: 30%;
+  background: #14be4c;
+  color: white;
+  text-align: center;
+  padding: 150px 0;
+  border-bottom: 4px solid #6cff9c;
+}
+/* line 77, ../sass/app.sass */
+.links h2 {
+  font-family: "PT Serif", serif;
+  font-style: italic;
+  font-weight: 400;
+}
+/* line 81, ../sass/app.sass */
+.links h2 a {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  color: #d6fbe2;
+  border-bottom: 3px solid #14be4c;
+}
+/* line 88, ../sass/app.sass */
+.links h2 a:hover {
+  color: white;
+  border-bottom-color: white;
+}
+
+/* line 93, ../sass/app.sass */
+.footer {
+  min-height: 30%;
+  background: #0aa58f;
+  color: white;
+  text-align: center;
+  padding: 150px 0;
+  border-bottom: 4px solid #49ffe5;
+  min-height: 30%;
+  bottom: 0;
 }
