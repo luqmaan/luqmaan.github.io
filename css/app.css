@@ -6644,75 +6644,90 @@ html, body {
 
 /* line 31, ../sass/app.sass */
 .header {
-  min-height: 30%;
   background: #554396;
   color: white;
   text-align: center;
-  padding: 150px 0;
+  padding: 60px 0;
   border-bottom: 4px solid #9173ff;
+  padding: 120px 0;
 }
-/* line 37, ../sass/app.sass */
+/* line 39, ../sass/app.sass */
 .header .title, .header .subtitle {
   margin: 10px 0;
   padding: 0;
 }
-/* line 41, ../sass/app.sass */
+/* line 43, ../sass/app.sass */
 .header .title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   text-shadow: 0 2px 2px #372b61;
 }
-/* line 46, ../sass/app.sass */
+/* line 48, ../sass/app.sass */
 .header .title a {
   color: white;
 }
-/* line 49, ../sass/app.sass */
+/* line 51, ../sass/app.sass */
 .header .subtitle {
   font-family: "PT Serif", serif;
   font-style: italic;
   font-weight: 400;
   text-shadow: 0 1px 2px #413373;
 }
-/* line 54, ../sass/app.sass */
+/* line 56, ../sass/app.sass */
 .header .subtitle a {
   color: #e8e5f3;
 }
 
-/* line 58, ../sass/app.sass */
+/* line 60, ../sass/app.sass */
 .about {
-  min-height: 30%;
-  background: #8abf05;
+  background: #0aa58f;
   color: white;
   text-align: center;
-  padding: 150px 0;
-  border-bottom: 4px solid #d1ff5e;
+  padding: 60px 0;
+  border-bottom: 4px solid #49ffe5;
 }
-/* line 64, ../sass/app.sass */
+/* line 66, ../sass/app.sass */
 .about p {
+  text-align: center;
   font-family: "PT Serif", serif;
   font-style: italic;
   font-weight: 400;
   color: white;
-  font-size: 30px;
+  font-size: 25px;
+  line-height: 44px;
+  margin-bottom: 0;
+}
+/* line 76, ../sass/app.sass */
+.about a {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  border-bottom: 1px solid white;
+}
+/* line 80, ../sass/app.sass */
+.about a:hover {
+  color: saturate(#077565 30%);
+  border-bottom-color: saturate(#0dd5b9 30%);
 }
 
-/* line 71, ../sass/app.sass */
+/* line 86, ../sass/app.sass */
 .links {
-  min-height: 30%;
   background: #14be4c;
   color: white;
   text-align: center;
-  padding: 150px 0;
+  padding: 60px 0;
   border-bottom: 4px solid #6cff9c;
 }
-/* line 77, ../sass/app.sass */
+/* line 92, ../sass/app.sass */
 .links h2 {
   font-family: "PT Serif", serif;
   font-style: italic;
   font-weight: 400;
 }
-/* line 81, ../sass/app.sass */
+/* line 96, ../sass/app.sass */
 .links h2 a {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -6723,22 +6738,21 @@ html, body {
   -o-transition-duration: 200ms;
   transition-duration: 200ms;
   color: #d6fbe2;
-  border-bottom: 3px solid #14be4c;
+  border-bottom: 3px solid #d6fbe2;
 }
-/* line 88, ../sass/app.sass */
+/* line 103, ../sass/app.sass */
 .links h2 a:hover {
   color: white;
   border-bottom-color: white;
 }
 
-/* line 93, ../sass/app.sass */
+/* line 108, ../sass/app.sass */
 .footer {
-  min-height: 30%;
-  background: #0aa58f;
+  background: #8abf05;
   color: white;
   text-align: center;
-  padding: 150px 0;
-  border-bottom: 4px solid #49ffe5;
+  padding: 60px 0;
+  border-bottom: 4px solid #d1ff5e;
   min-height: 30%;
   bottom: 0;
 }
