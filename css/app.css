@@ -6627,13 +6627,13 @@ a.th {
   max-width: 800px;
 }
 
-/* line 12, ../sass/app.sass */
+/* line 19, ../sass/app.sass */
 html, body {
   background: #f5f3ee;
   height: 100%;
 }
 
-/* line 16, ../sass/app.sass */
+/* line 23, ../sass/app.sass */
 .container {
   position: absolute;
   top: 0;
@@ -6642,117 +6642,299 @@ html, body {
   left: 0;
 }
 
-/* line 31, ../sass/app.sass */
+/* line 74, ../sass/app.sass */
 .header {
-  background: #554396;
-  color: white;
+  background: #584197;
+  color: #c3b8e0;
   text-align: center;
   padding: 60px 0;
-  border-bottom: 4px solid #9173ff;
+  border-bottom: 4px solid #9872ff;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
   padding: 120px 0;
 }
-/* line 39, ../sass/app.sass */
+/* line 40, ../sass/app.sass */
+.header a, .header p, .header h1, .header h2, .header h3, .header h4, .header h5, .header h6 {
+  color: #c3b8e0;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+/* line 44, ../sass/app.sass */
+.header a {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid #584197;
+}
+/* line 48, ../sass/app.sass */
+.header h1, .header h2, .header h3 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+/* line 52, ../sass/app.sass */
+.header h3 {
+  font-weight: 300;
+}
+/* line 54, ../sass/app.sass */
+.header h4 {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.6em;
+}
+/* line 60, ../sass/app.sass */
+.header:hover {
+  border-bottom-color: #af72ff;
+  color: white;
+}
+/* line 65, ../sass/app.sass */
+.header:hover p, .header:hover h1, .header:hover h2, .header:hover h3, .header:hover h4, .header:hover h5, .header:hover h6 {
+  color: white;
+}
+/* line 67, ../sass/app.sass */
+.header:hover a {
+  color: #8072ff;
+  border-bottom-color: #8072ff;
+}
+/* line 70, ../sass/app.sass */
+.header:hover a:hover {
+  color: #af72ff;
+  border-bottom-color: #af72ff;
+}
+/* line 82, ../sass/app.sass */
 .header .title, .header .subtitle {
   margin: 10px 0;
   padding: 0;
+  text-transform: none;
 }
-/* line 43, ../sass/app.sass */
+/* line 87, ../sass/app.sass */
 .header .title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  text-shadow: 0 2px 2px #372b61;
+  text-shadow: 0 2px 2px #392a62;
 }
-/* line 48, ../sass/app.sass */
-.header .title a {
-  color: white;
-}
-/* line 51, ../sass/app.sass */
+/* line 95, ../sass/app.sass */
 .header .subtitle {
   font-family: "PT Serif", serif;
   font-style: italic;
   font-weight: 400;
-  text-shadow: 0 1px 2px #413373;
-}
-/* line 56, ../sass/app.sass */
-.header .subtitle a {
-  color: #e8e5f3;
+  text-shadow: 0 1px 2px #433273;
 }
 
-/* line 60, ../sass/app.sass */
+/* line 104, ../sass/app.sass */
 .about {
-  background: #0aa58f;
-  color: white;
+  background: #19a58e;
+  color: #a6f2e5;
   text-align: center;
   padding: 60px 0;
-  border-bottom: 4px solid #49ffe5;
+  border-bottom: 4px solid #58ffe3;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
 }
-/* line 66, ../sass/app.sass */
-.about p {
-  text-align: center;
-  font-family: "PT Serif", serif;
-  font-style: italic;
-  font-weight: 400;
-  color: white;
-  font-size: 25px;
-  line-height: 44px;
-  margin-bottom: 0;
+/* line 40, ../sass/app.sass */
+.about a, .about p, .about h1, .about h2, .about h3, .about h4, .about h5, .about h6 {
+  color: #a6f2e5;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
-/* line 76, ../sass/app.sass */
+/* line 44, ../sass/app.sass */
 .about a {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  color: white;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #19a58e;
 }
-/* line 80, ../sass/app.sass */
-.about a:hover {
-  color: saturate(#077565 30%);
-  border-bottom-color: saturate(#0dd5b9 30%);
+/* line 48, ../sass/app.sass */
+.about h1, .about h2, .about h3 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
 }
-
-/* line 86, ../sass/app.sass */
-.links {
-  background: #14be4c;
+/* line 52, ../sass/app.sass */
+.about h3 {
+  font-weight: 300;
+}
+/* line 54, ../sass/app.sass */
+.about h4 {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.6em;
+}
+/* line 60, ../sass/app.sass */
+.about:hover {
+  border-bottom-color: #58ffff;
   color: white;
+}
+/* line 65, ../sass/app.sass */
+.about:hover p, .about:hover h1, .about:hover h2, .about:hover h3, .about:hover h4, .about:hover h5, .about:hover h6 {
+  color: white;
+}
+/* line 67, ../sass/app.sass */
+.about:hover a {
+  color: #58ffc7;
+  border-bottom-color: #58ffc7;
+}
+/* line 70, ../sass/app.sass */
+.about:hover a:hover {
+  color: #58ffff;
+  border-bottom-color: #58ffff;
+}
+/* line 110, ../sass/app.sass */
+.about p {
   text-align: center;
-  padding: 60px 0;
-  border-bottom: 4px solid #6cff9c;
-}
-/* line 92, ../sass/app.sass */
-.links h2 {
   font-family: "PT Serif", serif;
   font-style: italic;
   font-weight: 400;
-}
-/* line 96, ../sass/app.sass */
-.links h2 a {
-  -webkit-transition-property: all;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 200ms;
-  -moz-transition-duration: 200ms;
-  -o-transition-duration: 200ms;
-  transition-duration: 200ms;
-  color: #d6fbe2;
-  border-bottom: 3px solid #d6fbe2;
-}
-/* line 103, ../sass/app.sass */
-.links h2 a:hover {
-  color: white;
-  border-bottom-color: white;
+  font-size: 22px;
+  line-height: 44px;
+  margin-bottom: 0;
 }
 
-/* line 108, ../sass/app.sass */
-.footer {
-  background: #8abf05;
-  color: white;
+/* line 120, ../sass/app.sass */
+.work {
+  background: #157ca0;
+  color: #a5dff3;
   text-align: center;
   padding: 60px 0;
-  border-bottom: 4px solid #d1ff5e;
+  border-bottom: 4px solid #4fd1ff;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+/* line 40, ../sass/app.sass */
+.work a, .work p, .work h1, .work h2, .work h3, .work h4, .work h5, .work h6 {
+  color: #a5dff3;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+/* line 44, ../sass/app.sass */
+.work a {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid #157ca0;
+}
+/* line 48, ../sass/app.sass */
+.work h1, .work h2, .work h3 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+/* line 52, ../sass/app.sass */
+.work h3 {
+  font-weight: 300;
+}
+/* line 54, ../sass/app.sass */
+.work h4 {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.6em;
+}
+/* line 60, ../sass/app.sass */
+.work:hover {
+  border-bottom-color: #4fb4ff;
+  color: white;
+}
+/* line 65, ../sass/app.sass */
+.work:hover p, .work:hover h1, .work:hover h2, .work:hover h3, .work:hover h4, .work:hover h5, .work:hover h6 {
+  color: white;
+}
+/* line 67, ../sass/app.sass */
+.work:hover a {
+  color: #4feeff;
+  border-bottom-color: #4feeff;
+}
+/* line 70, ../sass/app.sass */
+.work:hover a:hover {
+  color: #4fb4ff;
+  border-bottom-color: #4fb4ff;
+}
+
+/* line 128, ../sass/app.sass */
+.footer {
+  background: #2c689a;
+  color: #b0cfe8;
+  text-align: center;
+  padding: 60px 0;
+  border-bottom: 4px solid #60b7ff;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
   min-height: 30%;
   bottom: 0;
+}
+/* line 40, ../sass/app.sass */
+.footer a, .footer p, .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6 {
+  color: #b0cfe8;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+/* line 44, ../sass/app.sass */
+.footer a {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid #2c689a;
+}
+/* line 48, ../sass/app.sass */
+.footer h1, .footer h2, .footer h3 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+/* line 52, ../sass/app.sass */
+.footer h3 {
+  font-weight: 300;
+}
+/* line 54, ../sass/app.sass */
+.footer h4 {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.6em;
+}
+/* line 60, ../sass/app.sass */
+.footer:hover {
+  border-bottom-color: #609cff;
+  color: white;
+}
+/* line 65, ../sass/app.sass */
+.footer:hover p, .footer:hover h1, .footer:hover h2, .footer:hover h3, .footer:hover h4, .footer:hover h5, .footer:hover h6 {
+  color: white;
+}
+/* line 67, ../sass/app.sass */
+.footer:hover a {
+  color: #60d1ff;
+  border-bottom-color: #60d1ff;
+}
+/* line 70, ../sass/app.sass */
+.footer:hover a:hover {
+  color: #609cff;
+  border-bottom-color: #609cff;
+}
+/* line 137, ../sass/app.sass */
+.footer .mail {
+  direction: rtl;
 }

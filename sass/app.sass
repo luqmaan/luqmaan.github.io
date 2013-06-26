@@ -9,6 +9,13 @@ $teal: #00917d
 $serif: 'PT Serif', serif
 $sans: 'Oswald', sans-serif
 
+$swatch1A: desaturate(#0faf94, 10%)
+$swatch1B: desaturate(#0c80a9, 10%)
+$swatch1C: desaturate(#2269a4, 10%)
+$swatch1D: desaturate(#355ca3, 10%)
+$swatch1E: desaturate(#4346a2, 10%)
+$swatch1F: desaturate(#5336a2, 10%)
+
 html, body
     background: $beige
     height: 100%
@@ -21,16 +28,52 @@ html, body
     left: 0
 
 @mixin section($base_color, $text_color)
-    // min-height: 30%
     background: $base_color
-    color: $text_color
+    color: darken($text_color, 20%)
     text-align: center
     padding: 60px 0
-    border-bottom: 4px solid saturate(lighten($base_color, 30%), 100%)
+    $accent: saturate(lighten($base_color, 30%), 100%)
+    border-bottom: 4px solid $accent
+    @include transition(background 0.3s ease-in-out)
+   
+
+    a, p, h1, h2, h3, h4, h5, h6
+        color: darken($text_color, 20%)
+        @include transition(color 0.3s ease-in-out)
+
+    a
+        @include transition(all 0.3s ease-in-out)
+        border-bottom: 1px solid $base_color
+
+    h1, h2, h3
+        font-family: $sans
+        text-transform: uppercase
+        font-weight: 400
+    h3
+        font-weight: 300
+    h4
+        font-family: $serif
+        font-weight: 400
+        font-style: italic
+        line-height: 1.6em
+
+    &:hover
+        // box-shadow: inset 0 0 50px 10px darken(saturate($base_color, 15%), 10%)
+        // background: adjust-hue($base_color, 5%)
+        border-bottom-color: adjust-hue($accent, 10%)
+        color: $text_color
+        p, h1, h2, h3, h4, h5, h6
+            color: $text_color
+        a
+            color: adjust-hue($accent, -10%)
+            border-bottom-color: adjust-hue($accent, -10%)
+            &:hover
+                color: adjust-hue($accent, 10%)
+                border-bottom-color: adjust-hue($accent, 10%)
 
 .header
     
-    $base_color: #554396
+    $base_color: $swatch1F
     $text_color: lighten($base_color, 70%)
     @include section($base_color, $text_color)
 
@@ -39,27 +82,28 @@ html, body
     .title, .subtitle
         margin: 10px 0
         padding: 0
+        text-transform: none
 
     .title
         font-family: $sans
         font-weight: 400
         text-transform: uppercase
         text-shadow: 0 2px 2px darken($base_color, 15%)
-        a
-            color: lighten($base_color, 60%)
+        // a
+            // color: lighten($base_color, 60%)
 
     .subtitle
         font-family: $serif
         font-style: italic
         font-weight: 400
         text-shadow: 0 1px 2px darken($base_color, 10%)
-        a
-            color: lighten($base_color, 50%)
+        // a
+            // color: lighten($base_color, 50%)
 
 
 .about
 
-    $base_color:  #0aa58f
+    $base_color: $swatch1A
     $text_color: lighten($base_color, 70%)
     @include section($base_color, $text_color)
 
@@ -68,49 +112,27 @@ html, body
         font-family: $serif
         font-style: italic
         font-weight: 400
-        color: $text_color
-        font-size: 25px
+        font-size: 22px
         line-height: 44px
         margin-bottom: 0
 
-    a
-        @include transition(all 0.3s ease-in-out)
-        color: #fff
-        border-bottom: 1px solid #fff
-        &:hover
-            color: saturate(darken($base_color, 10%) 30%)
-            border-bottom-color: saturate(lighten($base_color, 10%) 30%)
 
-
-
-.links
+.work
     
-    $base_color: #14be4c
+    $base_color: $swatch1B
     $text_color: lighten($base_color, 70%)
     @include section($base_color, $text_color)
 
-    h2
-        font-family: $serif
-        font-style: italic
-        font-weight: 400
-        a
-            @include transition-property(all)
-            @include transition-duration(200ms)
-            $normal: lighten($base_color, 50%)
-            $hover: lighten($base_color, 70%)
-            color: $normal
-            border-bottom: 3px solid $normal
-            &:hover
-                color: $hover
-                border-bottom-color: $hover
 
 
 .footer
     
-    $base_color: #8abf05
+    $base_color: $swatch1C
     $text_color: lighten($base_color, 70%)
     @include section($base_color, $text_color)
 
     min-height: 30%
     bottom: 0
 
+    .mail
+        direction: rtl
