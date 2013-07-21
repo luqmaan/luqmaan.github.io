@@ -11,7 +11,7 @@ $sans: 'Oswald', sans-serif
 
 $swatch1A: desaturate(#0faf94, 10%)
 $swatch1B: desaturate(#0c80a9, 10%)
-$swatch1C: desaturate(#2269a4, 10%)
+$swatch1C: desaturate(#2165a3, 10%)
 $swatch1D: desaturate(#355ca3, 10%)
 $swatch1E: desaturate(#4346a2, 10%)
 $swatch1F: desaturate(#5336a2, 10%)
@@ -34,16 +34,16 @@ html, body
     padding: 60px 0
     $accent: saturate(lighten($base_color, 30%), 100%)
     border-bottom: 4px solid $accent
-    @include transition(background 0.3s ease-in-out)
+    +transition(background 0.3s ease-in-out)
    
 
     a, p, h1, h2, h3, h4, h5, h6
         color: darken($text_color, 20%)
-        @include transition(color 0.3s ease-in-out)
+        +transition(color 0.3s ease-in-out)
 
     a
-        @include transition(all 0.3s ease-in-out)
-        border-bottom: 1px solid $base_color
+        +transition(all 0.3s ease-in-out)
+        border-bottom: 2px solid $base_color
 
     h1, h2, h3
         font-family: $sans
@@ -57,7 +57,7 @@ html, body
         font-style: italic
         line-height: 1.6em
 
-    &:hover
+    .row:hover
         // box-shadow: inset 0 0 50px 10px darken(saturate($base_color, 15%), 10%)
         // background: adjust-hue($base_color, 5%)
         border-bottom-color: adjust-hue($accent, 10%)
@@ -65,17 +65,18 @@ html, body
         p, h1, h2, h3, h4, h5, h6
             color: $text_color
         a
-            color: adjust-hue($accent, -10%)
-            border-bottom-color: adjust-hue($accent, -10%)
+            $link_color: desaturate(lighten(adjust-hue($accent, 10%), 20%), 10%)
+            color: $link_color
+            border-bottom-color: $link_color
             &:hover
-                color: adjust-hue($accent, 10%)
-                border-bottom-color: adjust-hue($accent, 10%)
+                color: adjust-hue($accent, -10%)
+                border-bottom-color: adjust-hue($accent, -10%)
 
 .header
     
     $base_color: $swatch1F
     $text_color: lighten($base_color, 70%)
-    @include section($base_color, $text_color)
+    +section($base_color, $text_color)
 
     padding: 120px 0
 
@@ -105,7 +106,7 @@ html, body
 
     $base_color: $swatch1A
     $text_color: lighten($base_color, 70%)
-    @include section($base_color, $text_color)
+    +section($base_color, $text_color)
 
     p
         text-align: center
@@ -121,18 +122,38 @@ html, body
     
     $base_color: $swatch1B
     $text_color: lighten($base_color, 70%)
-    @include section($base_color, $text_color)
+    +section($base_color, $text_color)
+    .row, h2
+        padding: 20px 0
+    .row
+        .image
+            +transition(opacity 0.2s ease-in-out, background-size 0.4s ease-out)
+            opacity: 0.6
+            width: 300px
+            height: 300px
+            position: relative
+            margin: auto
+            background: center no-repeat
+            background-size: 120%
+            border-radius: 150px
+            border: 5px solid $text_color
+        &:hover
+            .image
+                opacity: 1
+                background-size: 100%
 
 
 
 .footer
     
-    $base_color: $swatch1C
+    $base_color: #5e339a
     $text_color: lighten($base_color, 70%)
-    @include section($base_color, $text_color)
+    +section($base_color, $text_color)
 
     min-height: 30%
     bottom: 0
 
-    .mail
-        direction: rtl
+.rtl
+    direction: rtl
+    unicode-bidi: "bidi-override"
+    direction: rtl

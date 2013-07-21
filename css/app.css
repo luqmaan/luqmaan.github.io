@@ -6642,7 +6642,7 @@ html, body {
   left: 0;
 }
 
-/* line 74, ../sass/app.sass */
+/* line 75, ../sass/app.sass */
 .header {
   background: #584197;
   color: #c3b8e0;
@@ -6669,7 +6669,7 @@ html, body {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  border-bottom: 1px solid #584197;
+  border-bottom: 2px solid #584197;
 }
 /* line 48, ../sass/app.sass */
 .header h1, .header h2, .header h3 {
@@ -6689,38 +6689,38 @@ html, body {
   line-height: 1.6em;
 }
 /* line 60, ../sass/app.sass */
-.header:hover {
+.header .row:hover {
   border-bottom-color: #af72ff;
   color: white;
 }
 /* line 65, ../sass/app.sass */
-.header:hover p, .header:hover h1, .header:hover h2, .header:hover h3, .header:hover h4, .header:hover h5, .header:hover h6 {
+.header .row:hover p, .header .row:hover h1, .header .row:hover h2, .header .row:hover h3, .header .row:hover h4, .header .row:hover h5, .header .row:hover h6 {
   color: white;
 }
 /* line 67, ../sass/app.sass */
-.header:hover a {
+.header .row:hover a {
+  color: #e9dafd;
+  border-bottom-color: #e9dafd;
+}
+/* line 71, ../sass/app.sass */
+.header .row:hover a:hover {
   color: #8072ff;
   border-bottom-color: #8072ff;
 }
-/* line 70, ../sass/app.sass */
-.header:hover a:hover {
-  color: #af72ff;
-  border-bottom-color: #af72ff;
-}
-/* line 82, ../sass/app.sass */
+/* line 83, ../sass/app.sass */
 .header .title, .header .subtitle {
   margin: 10px 0;
   padding: 0;
   text-transform: none;
 }
-/* line 87, ../sass/app.sass */
+/* line 88, ../sass/app.sass */
 .header .title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   text-shadow: 0 2px 2px #392a62;
 }
-/* line 95, ../sass/app.sass */
+/* line 96, ../sass/app.sass */
 .header .subtitle {
   font-family: "PT Serif", serif;
   font-style: italic;
@@ -6728,7 +6728,7 @@ html, body {
   text-shadow: 0 1px 2px #433273;
 }
 
-/* line 104, ../sass/app.sass */
+/* line 105, ../sass/app.sass */
 .about {
   background: #19a58e;
   color: #a6f2e5;
@@ -6754,7 +6754,7 @@ html, body {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  border-bottom: 1px solid #19a58e;
+  border-bottom: 2px solid #19a58e;
 }
 /* line 48, ../sass/app.sass */
 .about h1, .about h2, .about h3 {
@@ -6774,25 +6774,25 @@ html, body {
   line-height: 1.6em;
 }
 /* line 60, ../sass/app.sass */
-.about:hover {
+.about .row:hover {
   border-bottom-color: #58ffff;
   color: white;
 }
 /* line 65, ../sass/app.sass */
-.about:hover p, .about:hover h1, .about:hover h2, .about:hover h3, .about:hover h4, .about:hover h5, .about:hover h6 {
+.about .row:hover p, .about .row:hover h1, .about .row:hover h2, .about .row:hover h3, .about .row:hover h4, .about .row:hover h5, .about .row:hover h6 {
   color: white;
 }
 /* line 67, ../sass/app.sass */
-.about:hover a {
+.about .row:hover a {
+  color: #c1fcfc;
+  border-bottom-color: #c1fcfc;
+}
+/* line 71, ../sass/app.sass */
+.about .row:hover a:hover {
   color: #58ffc7;
   border-bottom-color: #58ffc7;
 }
-/* line 70, ../sass/app.sass */
-.about:hover a:hover {
-  color: #58ffff;
-  border-bottom-color: #58ffff;
-}
-/* line 110, ../sass/app.sass */
+/* line 111, ../sass/app.sass */
 .about p {
   text-align: center;
   font-family: "PT Serif", serif;
@@ -6803,7 +6803,7 @@ html, body {
   margin-bottom: 0;
 }
 
-/* line 120, ../sass/app.sass */
+/* line 121, ../sass/app.sass */
 .work {
   background: #157ca0;
   color: #a5dff3;
@@ -6829,7 +6829,7 @@ html, body {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  border-bottom: 1px solid #157ca0;
+  border-bottom: 2px solid #157ca0;
 }
 /* line 48, ../sass/app.sass */
 .work h1, .work h2, .work h3 {
@@ -6849,32 +6849,57 @@ html, body {
   line-height: 1.6em;
 }
 /* line 60, ../sass/app.sass */
-.work:hover {
+.work .row:hover {
   border-bottom-color: #4fb4ff;
   color: white;
 }
 /* line 65, ../sass/app.sass */
-.work:hover p, .work:hover h1, .work:hover h2, .work:hover h3, .work:hover h4, .work:hover h5, .work:hover h6 {
+.work .row:hover p, .work .row:hover h1, .work .row:hover h2, .work .row:hover h3, .work .row:hover h4, .work .row:hover h5, .work .row:hover h6 {
   color: white;
 }
 /* line 67, ../sass/app.sass */
-.work:hover a {
+.work .row:hover a {
+  color: #b9dffb;
+  border-bottom-color: #b9dffb;
+}
+/* line 71, ../sass/app.sass */
+.work .row:hover a:hover {
   color: #4feeff;
   border-bottom-color: #4feeff;
 }
-/* line 70, ../sass/app.sass */
-.work:hover a:hover {
-  color: #4fb4ff;
-  border-bottom-color: #4fb4ff;
+/* line 126, ../sass/app.sass */
+.work .row, .work h2 {
+  padding: 20px 0;
+}
+/* line 129, ../sass/app.sass */
+.work .row .image {
+  -webkit-transition: opacity 0.2s ease-in-out, background-size 0.4s ease-out;
+  -moz-transition: opacity 0.2s ease-in-out, background-size 0.4s ease-out;
+  -o-transition: opacity 0.2s ease-in-out, background-size 0.4s ease-out;
+  transition: opacity 0.2s ease-in-out, background-size 0.4s ease-out;
+  opacity: 0.6;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: auto;
+  background: center no-repeat;
+  background-size: 120%;
+  border-radius: 150px;
+  border: 5px solid white;
+}
+/* line 141, ../sass/app.sass */
+.work .row:hover .image {
+  opacity: 1;
+  background-size: 100%;
 }
 
-/* line 128, ../sass/app.sass */
+/* line 147, ../sass/app.sass */
 .footer {
-  background: #2c689a;
-  color: #b0cfe8;
+  background: #5e339a;
+  color: #c8b2e6;
   text-align: center;
   padding: 60px 0;
-  border-bottom: 4px solid #60b7ff;
+  border-bottom: 4px solid #a667ff;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   -o-transition: background 0.3s ease-in-out;
@@ -6884,7 +6909,7 @@ html, body {
 }
 /* line 40, ../sass/app.sass */
 .footer a, .footer p, .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6 {
-  color: #b0cfe8;
+  color: #c8b2e6;
   -webkit-transition: color 0.3s ease-in-out;
   -moz-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
@@ -6896,7 +6921,7 @@ html, body {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  border-bottom: 1px solid #2c689a;
+  border-bottom: 2px solid #5e339a;
 }
 /* line 48, ../sass/app.sass */
 .footer h1, .footer h2, .footer h3 {
@@ -6916,25 +6941,28 @@ html, body {
   line-height: 1.6em;
 }
 /* line 60, ../sass/app.sass */
-.footer:hover {
-  border-bottom-color: #609cff;
+.footer .row:hover {
+  border-bottom-color: #c067ff;
   color: white;
 }
 /* line 65, ../sass/app.sass */
-.footer:hover p, .footer:hover h1, .footer:hover h2, .footer:hover h3, .footer:hover h4, .footer:hover h5, .footer:hover h6 {
+.footer .row:hover p, .footer .row:hover h1, .footer .row:hover h2, .footer .row:hover h3, .footer .row:hover h4, .footer .row:hover h5, .footer .row:hover h6 {
   color: white;
 }
 /* line 67, ../sass/app.sass */
-.footer:hover a {
-  color: #60d1ff;
-  border-bottom-color: #60d1ff;
+.footer .row:hover a {
+  color: #eacffc;
+  border-bottom-color: #eacffc;
 }
-/* line 70, ../sass/app.sass */
-.footer:hover a:hover {
-  color: #609cff;
-  border-bottom-color: #609cff;
+/* line 71, ../sass/app.sass */
+.footer .row:hover a:hover {
+  color: #8d67ff;
+  border-bottom-color: #8d67ff;
 }
-/* line 137, ../sass/app.sass */
-.footer .mail {
+
+/* line 156, ../sass/app.sass */
+.rtl {
+  direction: rtl;
+  unicode-bidi: "bidi-override";
   direction: rtl;
 }
