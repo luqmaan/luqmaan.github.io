@@ -2,7 +2,7 @@
 @import normalize
 @import foundation
 @import compass/css3
-@import "http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Oswald:400,300,700"
+@import "http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Oswald:400,300,700|Droid+Sans:400,700"
 
 $beige: #f5f3ee
 $teal: #00917d
@@ -19,6 +19,7 @@ $swatch1F: desaturate(#5336a2, 10%)
 html, body
     background: $beige
     height: 100%
+    font-family: "Droid Sans"
 
 .container
     position: absolute
@@ -43,13 +44,15 @@ html, body
 
     a
         +transition(all 0.3s ease-in-out)
-        border-bottom: 2px solid $base_color
+        border-bottom: 1px solid $base_color
 
     h1, h2, h3
         font-family: $sans
         text-transform: uppercase
         font-weight: 400
+        text-shadow: 0 2px 2px darken($base_color, 15%)
     h3
+        text-shadow: 0 1px 1px darken($base_color, 15%)
         font-weight: 300
     h4
         font-family: $serif
@@ -65,7 +68,7 @@ html, body
         p, h1, h2, h3, h4, h5, h6
             color: $text_color
         a
-            $link_color: desaturate(lighten(adjust-hue($accent, 10%), 20%), 10%)
+            $link_color: saturate(lighten(adjust-hue($accent, -145deg), 0%), 10%)
             color: $link_color
             border-bottom-color: $link_color
             &:hover
@@ -78,7 +81,8 @@ html, body
     $text_color: lighten($base_color, 70%)
     +section($base_color, $text_color)
 
-    padding: 120px 0
+    .row
+        padding: 120px 0
 
     .title, .subtitle
         margin: 10px 0
@@ -89,17 +93,12 @@ html, body
         font-family: $sans
         font-weight: 400
         text-transform: uppercase
-        text-shadow: 0 2px 2px darken($base_color, 15%)
-        // a
-            // color: lighten($base_color, 60%)
 
     .subtitle
         font-family: $serif
         font-style: italic
         font-weight: 400
         text-shadow: 0 1px 2px darken($base_color, 10%)
-        // a
-            // color: lighten($base_color, 50%)
 
 
 .about
@@ -107,6 +106,9 @@ html, body
     $base_color: $swatch1A
     $text_color: lighten($base_color, 70%)
     +section($base_color, $text_color)
+
+    a
+        border-bottom-width: 2px
 
     p
         text-align: center
@@ -124,10 +126,10 @@ html, body
     $text_color: lighten($base_color, 70%)
     +section($base_color, $text_color)
     .row, h2
-        padding: 20px 0
+        padding: 40px 0
     .row
         .image
-            +transition(opacity 0.2s ease-in-out, background-size 0.4s ease-out)
+            +transition(opacity 0.2s ease-in-out, background-size 0.2s ease-out)
             opacity: 0.6
             width: 300px
             height: 300px
@@ -137,10 +139,20 @@ html, body
             background-size: 120%
             border-radius: 150px
             border: 5px solid $text_color
+            box-shadow: inset 0 2px 2px $base_color
         &:hover
             .image
                 opacity: 1
                 background-size: 100%
+
+    p
+        line-height: 1.7em
+
+    li
+        list-style: none
+        &.lang
+            font-family: $serif
+            font-style: italic
 
 
 
