@@ -3,3 +3,4 @@ _site
 Thumbs.db
 .sass-cache
 *-gitignore.*
+nohup.out
