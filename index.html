@@ -13,7 +13,7 @@
 
   <div class="container">
 
-    <div class="header">
+    <div class="header section">
       <div class="row">
         <div class="large-12 columns">
           <h1 class="title">Luqmaan Dawoodjee</h1>
@@ -22,7 +22,7 @@
       </div>
     </div>
 
-    <div class="about">
+    <div class="about section">
       <div class="row">
         <div class="large-9 large-centered columns">
             <h4>
@@ -35,12 +35,12 @@
       </div>
     </div>
 
-    <div class="work">
+    <div class="work section">
       <div class="row">
         <div class="large-12 columns">
           <h1>My Work</h1>
         </div>
-        <div class="large-4 columns">
+        <div class="large-4 columns imagewrapper">
           <div class="image" style="background-image:url('images/hartxt.jpeg')"></div>
         </div>
         <div class="large-7 columns copy">
@@ -57,6 +57,9 @@
         </div>
       </div>
       <div class="row">
+        <div class="large-4 columns imagewrapper">
+          <div class="image" style="background-image:url('images/quora.png')"></div>
+        </div>
         <div class="large-7 columns copy">
           <div>
             <h3>Goodbye Quora Embed Button</h3>
@@ -70,19 +73,16 @@
             </ul>
           </div>
         </div>
-        <div class="large-4 columns">
-          <div class="image" style="background-image:url('images/quora.png')"></div>
-        </div>
       </div>
       <div class="row">
-        <div class="large-4 columns">
+        <div class="large-4 columns imagewrapper">
           <div class="image" style="background-image:url('images/bullrunnerapp.png')"></div>
         </div>
         <div class="large-7 columns copy">
           <div>
             <h3>BullRunner App</h3>
             <p>
-              A tiny Google Chrome extension that stops the Embed Quote button on Quora from popping up when text is selected. Over 100 users. Works by cloning Quora's HoverMenu.doShow() function and replacing it with a new functon that checks the source of the hover.
+              An iPhone app for the USF BullRunner. Determines your location and automatically displays nearby stops and arrival times. The official mobile site was too slow to use several times a day, so I built this.
             </p>
             <ul>
               <li class="lang">Objective-C, JSONKit, CHDataStructures, NUI</li>
@@ -92,6 +92,9 @@
         </div>
       </div>
       <div class="row">
+        <div class="large-4 columns imagewrapper">
+          <div class="image" style="background-image:url('images/pychecker.png')"></div>
+        </div>
         <div class="large-7 columns copy">
           <div>
             <h3>PyChecker</h3>
@@ -105,12 +108,9 @@
             </ul>
           </div>
         </div>
-        <div class="large-4 columns">
-          <div class="image" style="background-image:url('images/pychecker.png')"></div>
-        </div>
       </div>
       <div class="row">
-        <div class="large-4 columns">
+        <div class="large-4 columns imagewrapper">
           <div class="image" style="background-image:url('images/reeves.png')"></div>
         </div>
         <div class="large-7 columns copy">
@@ -122,17 +122,19 @@
             <ul>
               <li class="lang">JavaScript, Node.js, WebSQL</li>
               <li><a href="https://github.com/createch/Reeves-Kiosk/" target="_blank">View on GitHub</a></li>
-              <li><a href="http://kiosk.reevesimportmotorcars.com/" target="_blank">View webapp</a></li>
+              <li><a href="http://kiosk.reevesimportmotorcars.com/" target="_blank">View Webapp</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div><!-- /work -->
 
-    <div class="footer">
+    <div class="footer section">
       <div class="row">
-        <div class="large-6 columns">
-          <div class="rtl" dir="rtl">moc.liamg@eejdoowadl</div>
+        <div class="large-12 columns">
+          Luqmaan Dawoodjee
+          <p><a href="mailto:&#108;&#100;&#097;&#119;&#111;&#111;&#100;&#106;&#101;&#101;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#108;&#100;&#097;&#119;&#111;&#111;&#100;&#106;&#101;&#101;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a><br />(&#051;&#050;&#049;)&#045;&#055;&#053;&#048;&#045;&#055;&#056;&#057;&#053;</p>
+          </p>
         </div>
       </div>
     </div>
@@ -144,24 +146,7 @@
   ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
   '.js><\/script>')
   </script>
-  <script src="js/foundation/foundation.js"></script>
-  <script src="js/foundation/foundation.alerts.js"></script>
-  <script src="js/foundation/foundation.clearing.js"></script>
-  <script src="js/foundation/foundation.cookie.js"></script>
-  <script src="js/foundation/foundation.dropdown.js"></script>
-  <script src="js/foundation/foundation.forms.js"></script>
-  <script src="js/foundation/foundation.interchange.js"></script>
-  <script src="js/foundation/foundation.joyride.js"></script>
-  <script src="js/foundation/foundation.magellan.js"></script>
-  <script src="js/foundation/foundation.orbit.js"></script>
-  <script src="js/foundation/foundation.placeholder.js"></script>
-  <script src="js/foundation/foundation.reveal.js"></script>
-  <script src="js/foundation/foundation.section.js"></script>
-  <script src="js/foundation/foundation.tooltips.js"></script>
-  <script src="js/foundation/foundation.topbar.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>
 
