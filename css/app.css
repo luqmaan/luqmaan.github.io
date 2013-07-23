@@ -6931,16 +6931,12 @@ html, body {
   -o-transition-property: all;
   transition-property: all;
   -webkit-appearance: none;
-  opacity: 0.6;
   position: relative;
   margin: auto;
   background: center no-repeat;
   background-size: 120%;
   border-radius: 150px;
   border: 5px solid white;
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  filter: grayscale(100%);
   width: 200px;
   height: 200px;
   margin: 20px auto;
@@ -6948,35 +6944,44 @@ html, body {
 @media only screen and (min-width: 1280px) {
   /* line 150, ../sass/app.sass */
   .work .image {
+    opacity: 0.6;
     width: 300px;
     height: 300px;
     margin: 0 auto;
     box-shadow: inset 0 2px 2px #157ca0;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
   }
 }
 /* line 172, ../sass/app.sass */
 .work .row:hover .image, .work.touch .image {
   opacity: 1;
   background-size: 100%;
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  filter: grayscale(0%);
 }
-/* line 177, ../sass/app.sass */
+@media only screen and (min-width: 1280px) {
+  /* line 172, ../sass/app.sass */
+  .work .row:hover .image, .work.touch .image {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+}
+/* line 178, ../sass/app.sass */
 .work p {
   line-height: 1.7em;
 }
-/* line 180, ../sass/app.sass */
+/* line 181, ../sass/app.sass */
 .work li {
   list-style: none;
 }
-/* line 182, ../sass/app.sass */
+/* line 183, ../sass/app.sass */
 .work li.lang {
   font-family: "PT Serif", serif;
   font-style: italic;
 }
 
-/* line 187, ../sass/app.sass */
+/* line 188, ../sass/app.sass */
 .footer {
   background: #00b798;
   color: #99ffee;
