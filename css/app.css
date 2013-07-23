@@ -6627,14 +6627,14 @@ a.th {
   max-width: 800px;
 }
 
-/* line 19, ../sass/app.sass */
+/* line 23, ../sass/app.sass */
 html, body {
   background: #f5f3ee;
   height: 100%;
   font-family: "Droid Sans";
 }
 
-/* line 25, ../sass/app.sass */
+/* line 29, ../sass/app.sass */
 .container {
   position: absolute;
   top: 0;
@@ -6643,7 +6643,7 @@ html, body {
   left: 0;
 }
 
-/* line 83, ../sass/app.sass */
+/* line 87, ../sass/app.sass */
 .header {
   background: #584197;
   color: #c3b8e0;
@@ -6655,7 +6655,7 @@ html, body {
   -o-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
 }
-/* line 43, ../sass/app.sass */
+/* line 47, ../sass/app.sass */
 .header a, .header p, .header h1, .header h2, .header h3, .header h4, .header h5, .header h6 {
   color: #c3b8e0;
   -webkit-transition: color 0.3s ease-in-out;
@@ -6663,7 +6663,7 @@ html, body {
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
-/* line 47, ../sass/app.sass */
+/* line 51, ../sass/app.sass */
 .header a {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -6671,69 +6671,69 @@ html, body {
   transition: all 0.3s ease-in-out;
   border-bottom: 1px solid #584197;
 }
-/* line 51, ../sass/app.sass */
+/* line 55, ../sass/app.sass */
 .header h1, .header h2, .header h3 {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   text-shadow: 0 2px 2px #392a62;
 }
-/* line 56, ../sass/app.sass */
+/* line 60, ../sass/app.sass */
 .header h3 {
   text-shadow: 0 1px 1px #392a62;
 }
 @media only screen and (min-width: 1280px) {
-  /* line 56, ../sass/app.sass */
+  /* line 60, ../sass/app.sass */
   .header h3 {
     font-weight: 300;
   }
 }
-/* line 60, ../sass/app.sass */
+/* line 64, ../sass/app.sass */
 .header h4 {
   font-family: "PT Serif", serif;
   font-weight: 400;
   font-style: italic;
   line-height: 1.6em;
 }
-/* line 66, ../sass/app.sass */
+/* line 70, ../sass/app.sass */
 .header:hover {
   border-bottom-color: #af72ff;
 }
-/* line 69, ../sass/app.sass */
+/* line 73, ../sass/app.sass */
 .header .row:hover, .header.touch .row {
   color: white;
 }
-/* line 72, ../sass/app.sass */
+/* line 76, ../sass/app.sass */
 .header .row:hover p, .header .row:hover h1, .header .row:hover h2, .header .row:hover h3, .header .row:hover h4, .header .row:hover h5, .header .row:hover h6, .header.touch .row p, .header.touch .row h1, .header.touch .row h2, .header.touch .row h3, .header.touch .row h4, .header.touch .row h5, .header.touch .row h6 {
   color: white;
 }
-/* line 74, ../sass/app.sass */
+/* line 78, ../sass/app.sass */
 .header .row:hover a, .header.touch .row a {
   color: #8072ff;
   border-bottom-color: #8072ff;
 }
-/* line 78, ../sass/app.sass */
+/* line 82, ../sass/app.sass */
 .header .row:hover a:hover, .header.touch .row a:hover {
   color: #af72ff;
   border-bottom-color: #af72ff;
 }
-/* line 89, ../sass/app.sass */
+/* line 93, ../sass/app.sass */
 .header .row {
   padding: 120px 0;
 }
-/* line 92, ../sass/app.sass */
+/* line 96, ../sass/app.sass */
 .header .title, .header .subtitle {
   margin: 10px 0;
   padding: 0;
   text-transform: none;
 }
-/* line 97, ../sass/app.sass */
+/* line 101, ../sass/app.sass */
 .header .title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
 }
-/* line 102, ../sass/app.sass */
+/* line 106, ../sass/app.sass */
 .header .subtitle {
   font-family: "PT Serif", serif;
   font-style: italic;
@@ -6741,7 +6741,7 @@ html, body {
   text-shadow: 0 1px 2px #433273;
 }
 
-/* line 109, ../sass/app.sass */
+/* line 113, ../sass/app.sass */
 .about {
   background: #19a58e;
   color: #a6f2e5;
@@ -6753,7 +6753,7 @@ html, body {
   -o-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
 }
-/* line 43, ../sass/app.sass */
+/* line 47, ../sass/app.sass */
 .about a, .about p, .about h1, .about h2, .about h3, .about h4, .about h5, .about h6 {
   color: #a6f2e5;
   -webkit-transition: color 0.3s ease-in-out;
@@ -6761,7 +6761,7 @@ html, body {
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
-/* line 47, ../sass/app.sass */
+/* line 51, ../sass/app.sass */
 .about a {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -6769,57 +6769,57 @@ html, body {
   transition: all 0.3s ease-in-out;
   border-bottom: 1px solid #19a58e;
 }
-/* line 51, ../sass/app.sass */
+/* line 55, ../sass/app.sass */
 .about h1, .about h2, .about h3 {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   text-shadow: 0 2px 2px #0f6355;
 }
-/* line 56, ../sass/app.sass */
+/* line 60, ../sass/app.sass */
 .about h3 {
   text-shadow: 0 1px 1px #0f6355;
 }
 @media only screen and (min-width: 1280px) {
-  /* line 56, ../sass/app.sass */
+  /* line 60, ../sass/app.sass */
   .about h3 {
     font-weight: 300;
   }
 }
-/* line 60, ../sass/app.sass */
+/* line 64, ../sass/app.sass */
 .about h4 {
   font-family: "PT Serif", serif;
   font-weight: 400;
   font-style: italic;
   line-height: 1.6em;
 }
-/* line 66, ../sass/app.sass */
+/* line 70, ../sass/app.sass */
 .about:hover {
   border-bottom-color: #58ffff;
 }
-/* line 69, ../sass/app.sass */
+/* line 73, ../sass/app.sass */
 .about .row:hover, .about.touch .row {
   color: white;
 }
-/* line 72, ../sass/app.sass */
+/* line 76, ../sass/app.sass */
 .about .row:hover p, .about .row:hover h1, .about .row:hover h2, .about .row:hover h3, .about .row:hover h4, .about .row:hover h5, .about .row:hover h6, .about.touch .row p, .about.touch .row h1, .about.touch .row h2, .about.touch .row h3, .about.touch .row h4, .about.touch .row h5, .about.touch .row h6 {
   color: white;
 }
-/* line 74, ../sass/app.sass */
+/* line 78, ../sass/app.sass */
 .about .row:hover a, .about.touch .row a {
   color: #58ffc7;
   border-bottom-color: #58ffc7;
 }
-/* line 78, ../sass/app.sass */
+/* line 82, ../sass/app.sass */
 .about .row:hover a:hover, .about.touch .row a:hover {
   color: #58ffff;
   border-bottom-color: #58ffff;
 }
-/* line 115, ../sass/app.sass */
+/* line 119, ../sass/app.sass */
 .about a {
   border-bottom-width: 2px;
 }
-/* line 118, ../sass/app.sass */
+/* line 122, ../sass/app.sass */
 .about p {
   text-align: center;
   font-family: "PT Serif", serif;
@@ -6830,7 +6830,7 @@ html, body {
   margin-bottom: 0;
 }
 
-/* line 128, ../sass/app.sass */
+/* line 132, ../sass/app.sass */
 .work {
   background: #157ca0;
   color: #a5dff3;
@@ -6842,7 +6842,7 @@ html, body {
   -o-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
 }
-/* line 43, ../sass/app.sass */
+/* line 47, ../sass/app.sass */
 .work a, .work p, .work h1, .work h2, .work h3, .work h4, .work h5, .work h6 {
   color: #a5dff3;
   -webkit-transition: color 0.3s ease-in-out;
@@ -6850,7 +6850,7 @@ html, body {
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
-/* line 47, ../sass/app.sass */
+/* line 51, ../sass/app.sass */
 .work a {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -6858,74 +6858,79 @@ html, body {
   transition: all 0.3s ease-in-out;
   border-bottom: 1px solid #157ca0;
 }
-/* line 51, ../sass/app.sass */
+/* line 55, ../sass/app.sass */
 .work h1, .work h2, .work h3 {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   text-shadow: 0 2px 2px #0c475c;
 }
-/* line 56, ../sass/app.sass */
+/* line 60, ../sass/app.sass */
 .work h3 {
   text-shadow: 0 1px 1px #0c475c;
 }
 @media only screen and (min-width: 1280px) {
-  /* line 56, ../sass/app.sass */
+  /* line 60, ../sass/app.sass */
   .work h3 {
     font-weight: 300;
   }
 }
-/* line 60, ../sass/app.sass */
+/* line 64, ../sass/app.sass */
 .work h4 {
   font-family: "PT Serif", serif;
   font-weight: 400;
   font-style: italic;
   line-height: 1.6em;
 }
-/* line 66, ../sass/app.sass */
+/* line 70, ../sass/app.sass */
 .work:hover {
   border-bottom-color: #4fb4ff;
 }
-/* line 69, ../sass/app.sass */
+/* line 73, ../sass/app.sass */
 .work .row:hover, .work.touch .row {
   color: white;
 }
-/* line 72, ../sass/app.sass */
+/* line 76, ../sass/app.sass */
 .work .row:hover p, .work .row:hover h1, .work .row:hover h2, .work .row:hover h3, .work .row:hover h4, .work .row:hover h5, .work .row:hover h6, .work.touch .row p, .work.touch .row h1, .work.touch .row h2, .work.touch .row h3, .work.touch .row h4, .work.touch .row h5, .work.touch .row h6 {
   color: white;
 }
-/* line 74, ../sass/app.sass */
+/* line 78, ../sass/app.sass */
 .work .row:hover a, .work.touch .row a {
   color: #4feeff;
   border-bottom-color: #4feeff;
 }
-/* line 78, ../sass/app.sass */
+/* line 82, ../sass/app.sass */
 .work .row:hover a:hover, .work.touch .row a:hover {
   color: #4fb4ff;
   border-bottom-color: #4fb4ff;
 }
 @media only screen and (min-width: 1280px) {
-  /* line 134, ../sass/app.sass */
+  /* line 138, ../sass/app.sass */
   .work .row, .work h1 {
     padding: 40px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 140, ../sass/app.sass */
+  /* line 144, ../sass/app.sass */
   .work .row:nth-child(even) .imagewrapper {
     float: right;
   }
-  /* line 142, ../sass/app.sass */
+  /* line 146, ../sass/app.sass */
   .work .row:nth-child(even) .copy {
     float: left;
   }
 }
-/* line 146, ../sass/app.sass */
+/* line 150, ../sass/app.sass */
 .work .image {
-  -webkit-transition: all 0.2s ease-in-out, background-size 0.2s ease-out;
-  -moz-transition: all 0.2s ease-in-out, background-size 0.2s ease-out;
-  -o-transition: all 0.2s ease-in-out, background-size 0.2s ease-out;
-  transition: all 0.2s ease-in-out, background-size 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-appearance: none;
   opacity: 0.6;
   position: relative;
   margin: auto;
@@ -6933,7 +6938,6 @@ html, body {
   background-size: 120%;
   border-radius: 150px;
   border: 5px solid white;
-  box-shadow: inset 0 2px 2px #157ca0;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -6942,14 +6946,15 @@ html, body {
   margin: 20px auto;
 }
 @media only screen and (min-width: 1280px) {
-  /* line 146, ../sass/app.sass */
+  /* line 150, ../sass/app.sass */
   .work .image {
     width: 300px;
     height: 300px;
     margin: 0 auto;
+    box-shadow: inset 0 2px 2px #157ca0;
   }
 }
-/* line 166, ../sass/app.sass */
+/* line 172, ../sass/app.sass */
 .work .row:hover .image, .work.touch .image {
   opacity: 1;
   background-size: 100%;
@@ -6957,21 +6962,21 @@ html, body {
   -moz-filter: grayscale(0%);
   filter: grayscale(0%);
 }
-/* line 171, ../sass/app.sass */
+/* line 177, ../sass/app.sass */
 .work p {
   line-height: 1.7em;
 }
-/* line 174, ../sass/app.sass */
+/* line 180, ../sass/app.sass */
 .work li {
   list-style: none;
 }
-/* line 176, ../sass/app.sass */
+/* line 182, ../sass/app.sass */
 .work li.lang {
   font-family: "PT Serif", serif;
   font-style: italic;
 }
 
-/* line 181, ../sass/app.sass */
+/* line 187, ../sass/app.sass */
 .footer {
   background: #00b798;
   color: #99ffee;
@@ -6985,7 +6990,7 @@ html, body {
   min-height: 30%;
   bottom: 0;
 }
-/* line 43, ../sass/app.sass */
+/* line 47, ../sass/app.sass */
 .footer a, .footer p, .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6 {
   color: #99ffee;
   -webkit-transition: color 0.3s ease-in-out;
@@ -6993,7 +6998,7 @@ html, body {
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
-/* line 47, ../sass/app.sass */
+/* line 51, ../sass/app.sass */
 .footer a {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -7001,48 +7006,48 @@ html, body {
   transition: all 0.3s ease-in-out;
   border-bottom: 1px solid #00b798;
 }
-/* line 51, ../sass/app.sass */
+/* line 55, ../sass/app.sass */
 .footer h1, .footer h2, .footer h3 {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   text-shadow: 0 2px 2px #006b58;
 }
-/* line 56, ../sass/app.sass */
+/* line 60, ../sass/app.sass */
 .footer h3 {
   text-shadow: 0 1px 1px #006b58;
 }
 @media only screen and (min-width: 1280px) {
-  /* line 56, ../sass/app.sass */
+  /* line 60, ../sass/app.sass */
   .footer h3 {
     font-weight: 300;
   }
 }
-/* line 60, ../sass/app.sass */
+/* line 64, ../sass/app.sass */
 .footer h4 {
   font-family: "PT Serif", serif;
   font-weight: 400;
   font-style: italic;
   line-height: 1.6em;
 }
-/* line 66, ../sass/app.sass */
+/* line 70, ../sass/app.sass */
 .footer:hover {
   border-bottom-color: #51ffff;
 }
-/* line 69, ../sass/app.sass */
+/* line 73, ../sass/app.sass */
 .footer .row:hover, .footer.touch .row {
   color: white;
 }
-/* line 72, ../sass/app.sass */
+/* line 76, ../sass/app.sass */
 .footer .row:hover p, .footer .row:hover h1, .footer .row:hover h2, .footer .row:hover h3, .footer .row:hover h4, .footer .row:hover h5, .footer .row:hover h6, .footer.touch .row p, .footer.touch .row h1, .footer.touch .row h2, .footer.touch .row h3, .footer.touch .row h4, .footer.touch .row h5, .footer.touch .row h6 {
   color: white;
 }
-/* line 74, ../sass/app.sass */
+/* line 78, ../sass/app.sass */
 .footer .row:hover a, .footer.touch .row a {
   color: #51ffc5;
   border-bottom-color: #51ffc5;
 }
-/* line 78, ../sass/app.sass */
+/* line 82, ../sass/app.sass */
 .footer .row:hover a:hover, .footer.touch .row a:hover {
   color: #51ffff;
   border-bottom-color: #51ffff;
