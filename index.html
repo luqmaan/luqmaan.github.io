@@ -1,149 +1,242 @@
 <!DOCTYPE html>
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#00bfff" />
+    <meta name="msapplication-navbutton-color" content="#00bfff" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <title>Luqmaan Dawoodjee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-    <title>Luqmaan Dawoodjee | Developer</title>
-    <link rel="stylesheet" href="css/app.css" />
-    <script src="js/vendor/custom.modernizr.js"></script>
-</head>
-<body>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      :root {
+        --fg: #e8f8f5;
+        --bg: #00bfff;
+        --accent1: #ff4f00;
+        --accent3: #d5006d;
+        --border: #292929;
+        --pad: 2rem;
+        --thick: 5px;
+      }
+      html,
+      body {
+        height: 100%;
+        min-height: 100vh;
+        overflow-x: hidden;
+        background: var(--bg);
+      }
+      body {
+        margin: 0;
+        color: var(--fg);
+        background: var(--fg);
+        font-family: "Jost", system-ui, -apple-system, "Segoe UI", Roboto,
+          sans-serif;
+        line-height: 1.2;
+        width: 100%;
+        max-width: 100vw;
+      }
 
-  <div class="container">
+      ::selection {
+        background: var(--accent1);
+        color: var(--fg);
+      }
 
-    <div class="header section">
-      <div class="row">
-        <div class="large-12 columns">
-          <h1 class="title">Luqmaan Dawoodjee</h1>
-          <h3 class="subtitle">devloper</h3>
-        </div>
-      </div>
+      ::-moz-selection {
+        background: var(--accent1);
+        color: var(--fg);
+      }
+
+      .container {
+        margin: 0 auto;
+        min-height: 100vh;
+        height: 100vh;
+        width: 100%;
+        max-width: 100vw;
+        overflow-x: hidden;
+        background: var(--bg);
+      }
+
+      .frame {
+        min-height: 100vh;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        background: var(--bg);
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+      }
+
+      .hero {
+        padding: clamp(2rem, 8vw, 8rem) var(--pad);
+        background: var(--bg);
+        position: relative;
+      }
+
+      .name {
+        margin: 0;
+        font-weight: 900;
+        font-size: clamp(3rem, 10vw, 12rem);
+        line-height: 0.85;
+        letter-spacing: -0.03em;
+        color: var(--fg);
+        position: relative;
+      }
+
+      .first-name {
+        position: relative;
+        z-index: 2;
+        margin-left: 0.04em;
+      }
+
+      .last-name {
+        position: relative;
+        z-index: 1;
+        background: var(--accent3);
+        padding: 0.2em 0.4em;
+        margin-top: -0.2em;
+        display: inline-block;
+      }
+
+      .meta {
+        padding: var(--pad);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 2rem;
+        background: var(--bg);
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+      }
+
+      .link {
+        display: inline-block;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
+        font-weight: 900;
+        text-decoration: none;
+        color: var(--fg);
+        transition: all 0.1s ease;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        width: auto;
+        max-width: fit-content;
+      }
+
+      .link:hover,
+      .link:focus {
+        color: var(--accent3);
+        border-bottom-color: var(--accent3);
+        background: transparent;
+        outline: none;
+      }
+
+      @media (max-width: 768px) {
+        .name {
+          font-size: clamp(3.5rem, 15vw, 16rem);
+          margin-left: -0.2em;
+        }
+
+        .hero {
+          padding: clamp(1rem, 4vw, 4rem) var(--pad);
+        }
+
+        .meta {
+          padding: clamp(1rem, 3vw, 2rem) var(--pad);
+          gap: 1rem;
+          justify-content: center;
+        }
+
+        .links {
+          flex-direction: column;
+          padding: 0;
+          gap: 0;
+        }
+
+        .link {
+          text-align: center;
+          width: auto;
+          max-width: fit-content;
+          font-size: clamp(1.5rem, 5vw, 2.5rem);
+        }
+      }
+
+      @media print {
+        .frame,
+        .hero {
+          border: none;
+        }
+        .link {
+          border-bottom: 2px solid #000;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <main class="frame">
+        <header class="hero">
+          <h1 class="name">
+            <span class="first-name">Luqmaan</span><br />
+            <span class="last-name">Dawoodjee</span>
+          </h1>
+        </header>
+        <section class="meta">
+          <div class="links">
+            <a
+              class="link"
+              href="mailto:&#104;&#105;&#064;&#108;&#117;&#113;&#109;&#097;&#097;&#110;&#046;&#099;&#111;&#109;"
+              >&#104;&#105;&#064;&#108;&#117;&#113;&#109;&#097;&#097;&#110;&#046;&#099;&#111;&#109;</a
+            >
+            <a
+              class="link github"
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+            <a
+              class="link stackoverflow"
+              href="https://stackoverflow.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >StackOverflow</a
+            >
+            <a
+              class="link linkedin"
+              href="https://www.linkedin.com/in/luqmaan-dawoodjee-3ab53a43/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+            <a
+              class="link medium"
+              href="https://medium.com/@luqmonster"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Medium</a
+            >
+          </div>
+        </section>
+      </main>
     </div>
-
-    <div class="about section">
-      <div class="row">
-        <div class="large-9 large-centered columns">
-            <h4>I'm chief antelope at <a href="http://ordoro.com" target="_blank">Ordoro</a>.</h4>
-            <h4>I also do some stuff for <a href="http://open-austin.org" target="_blank">Open Austin</a>.</h4>
-        </div>
-      </div>
-    </div>
-
-    <div class="work section">
-      <div class="row">
-        <div class="large-12 columns">
-          <h1>some old projects</h1>
-        </div>
-        <div class="large-4 columns imagewrapper">
-          <div class="image" style="background-image:url('images/hartxt.jpeg')"></div>
-        </div>
-        <div class="large-7 columns copy">
-          <div>
-            <h3>HARTxt</h3>
-            <p>
-              Grand Prize Winner of the Tampa Mayor's Hackathon. An SMS system that allows HART passengers to to find out when the next buses will arrive. Simply send a text with the location ID (already posted at each stop) and route number, and the server responds with the arrival times for that stop. Also works in Spanish. Uses Google's GTFS data for bus arrival times and Twilio's REST API for the SMS.
-            </p>
-            <ul>
-              <li class="lang">Node.js, GTFS, Twilio, JavaScript</li>
-              <li><a href="https://github.com/createch/HACKATHON--HARTXT/" target="_blank">View on GitHub</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-4 columns imagewrapper">
-          <div class="image" style="background-image:url('images/quora.png')"></div>
-        </div>
-        <div class="large-7 columns copy">
-          <div>
-            <h3>Goodbye Quora Embed Button</h3>
-            <p>
-              A tiny Google Chrome extension that stops the Embed Quote button on Quora from popping up when text is selected. Over 100 users. Works by cloning Quora's HoverMenu.doShow() function and replacing it with a new functon that checks the source of the hover.
-            </p>
-            <ul>
-              <li class="lang">JavaScript</li>
-              <li><a href="https://github.com/createch/goodbye-quora-embed-button/" target="_blank">View on GitHub</a></li>
-              <li><a href="https://chrome.google.com/webstore/detail/goodbye-quora-embed-butto/ajpcmnmkmdijmiabfclcpogoagnbnjca" target="_blank">View on Chrome Web Store</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-4 columns imagewrapper">
-          <div class="image" style="background-image:url('images/bullrunnerapp.png')"></div>
-        </div>
-        <div class="large-7 columns copy">
-          <div>
-            <h3>BullRunner App</h3>
-            <p>
-              An iPhone app for the USF BullRunner. Determines your location and automatically displays nearby stops and arrival times. The official mobile site was too slow to use several times a day, so I built this.
-            </p>
-            <ul>
-              <li class="lang">Objective-C, JSONKit, CHDataStructures, NUI</li>
-              <li><a href="https://github.com/createch/bullrunnerapp/" target="_blank">View on GitHub</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-4 columns imagewrapper">
-          <div class="image" style="background-image:url('images/pychecker.png')"></div>
-        </div>
-        <div class="large-7 columns copy">
-          <div>
-            <h3>PyChecker</h3>
-            <p>
-              A web server and scraper that notifies users when the price of products change. Built using Python, Flask, SQLAlchemy and PhantomJS. 
-            </p>
-            <ul>
-              <li class="lang">Python, Flask, SQLAlchemy, PhantomJS</li>
-              <li><a href="https://github.com/createch/PriceChecker.py" target="_blank">View on GitHub</a></li>
-              <li><a href="http://pychecker.com/" target="_blank">View Webapp</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-4 columns imagewrapper">
-          <div class="image" style="background-image:url('images/reeves.png')"></div>
-        </div>
-        <div class="large-7 columns copy">
-          <div>
-            <h3>Reeves Kiosk</h3>
-            <p>
-              An Android-based kiosk placed in International Plaza for luxury car dealership Reeves. The kiosk, written using JavaScript and Phonegap, follows the MVC pattern, works offline, and performs bi-directional synchronisations of car data, base-64 encoded images, and new leads.
-            </p>
-            <ul>
-              <li class="lang">JavaScript, Node.js, WebSQL</li>
-              <li><a href="https://github.com/createch/Reeves-Kiosk/" target="_blank">View on GitHub</a></li>
-              <li><a href="http://kiosk.reevesimportmotorcars.com/" target="_blank">View Webapp</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div><!-- /work -->
-
-    <div class="footer section">
-      <div class="row">
-        <div class="large-12 columns">
-          Luqmaan Dawoodjee
-          <p><a href="mailto:&#108;&#100;&#097;&#119;&#111;&#111;&#100;&#106;&#101;&#101;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#108;&#100;&#097;&#119;&#111;&#111;&#100;&#106;&#101;&#101;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a><br /></p>
-          </p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <script>
-  document.write('<script src=' +
-  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
-  '.js><\/script>')
-  </script>
-  <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
-
-
